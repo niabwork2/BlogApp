@@ -85,6 +85,7 @@ class PostPreviewTableViewCell: UITableViewCell {
                 DispatchQueue.main.async {
                     //self?.postImageView.image = UIImage(data: data)
                     self?.postImageView.kf.setImage(with: url)
+                    print("PostPreview ImageView data \(data)")
                 }
             }
             task.resume()
